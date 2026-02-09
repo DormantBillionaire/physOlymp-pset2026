@@ -1,0 +1,76 @@
+\documentclass[a4paper,11pt]{scrartcl}
+
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc} %-- pour utiliser des accents en français
+\usepackage{amsmath,amssymb,amsthm} 
+\usepackage[round]{natbib}
+\usepackage{url}
+\usepackage{xspace}
+\usepackage[left=20mm,top=20mm]{geometry}
+\usepackage{algorithmic}
+\usepackage{subcaption}
+\usepackage{mathpazo}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{amsmath}
+% \usepackage{draftwatermark}
+
+\newcommand{\ie}{ie}
+\newcommand{\eg}{eg}
+\newcommand{\reffig}[1]{Figure~\ref{#1}}
+\newcommand{\refsec}[1]{Section~\ref{#1}}
+
+\setcapindent{1em} %-- for captions of Figures
+
+\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+\renewcommand{\algorithmicensure}{\textbf{Output:}}
+
+
+\title{Physics Cup 2026}
+\date{\today}
+
+
+\begin{document}
+
+\maketitle
+
+%%%
+%
+\section{Hint }
+
+Express the angular distance $2\alpha$ between the two foci of a hyperbola, as seen from an arbitrary point on the hyperbola, 
+in terms of the angle $\beta$ of the tangent line at that point and the eccentricity $\epsilon$ of the hyperbola.
+
+\section{Hint}
+The first step towards the solution is very similar to the \href{https://eupho.ee/wp-content/uploads/2023/06/EuPhO_2023_theo_sol.pdf}{T2 solution} of the European Physics Olympiad Problem No 2 from 2023.
+
+\section{Hint: (More Detailed Explanation to Follow Hint 01)}
+There is a simple relationship between $cos\alpha$ and $cos\beta$ that can be obtained by considering four applications of 
+the law of cosines for two suitably chosen triangles.
+
+\section{Hint}
+The first step is to figure out what is the brick's \href{https://en.wikipedia.org/wiki/Hodograph}{hodograph} looks like. It is
+also worth consulting \href{https://eupho.ee/wp-content/uploads/2023/06/EuPhO_2023_theory.pdf}{Problem No.2 from the 2023 European Physics Olympiad}. \\
+
+Second, you want to integrate $v_{y}$ over time $l_{y} = \int u_{y} dt = \int u_{y} \frac{u_{x}}{a_{x}}$, where the x component of the 
+acceleration $a_{x}$ can be expressed in terms of  $a_{0}$ and the relevant angles. 
+
+\section{Hint: The "Final" Boss}
+Here are the steps to solve the problem.\\
+
+First, determine the brick’s \href{https://en.wikipedia.org/wiki/Hodograph}{hodograph} and describe its shape with a formula in Cartesian coordinates (this will be needed later). You may find it helpful to 
+consult the \href{https://eupho.ee/wp-content/uploads/2023/06/EuPhO_2023_theo_sol.pdf}{T2 solution} of the European Physics Olympiad Problem No 2 from 2023. \\
+
+Second, express the force exerted by each plate in terms of the given quantities. \\
+
+Third, express the displacement as an integral of $v_{y}$ over time $l_{y} = \int u_{y} dt = \int u_{y} \frac{u_{x}}{a_{x}}$, where the x component of the 
+acceleration $a_{x}$ can be expressed in terms of  $a_{0}$ and the relevant angles. \\ 
+
+Fourth, using the hodograph’s formula, express the integrand in terms of either $u_{x}$ or $u_{y}$. Note that integration by parts may be helpful here.\\
+
+Fifth, solve the integral, then submit Answer to \href{mailto:physcs.cup@gmail.com}{Physics Cup Email}\\
+
+\bibliographystyle{plainnat}
+\bibliography{/Users/hugo/references/references}
+
+\end{document}
